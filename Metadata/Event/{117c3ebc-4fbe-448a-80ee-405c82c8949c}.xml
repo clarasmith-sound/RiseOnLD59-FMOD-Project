@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{117c3ebc-4fbe-448a-80ee-405c82c8949c}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>Gift</value>
 		</property>
@@ -31,6 +34,9 @@
 		<relationship name="parameters">
 			<destination>{1c0d58ba-f9aa-41cf-9457-ac9c1c19a761}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{d67d4887-1332-4d1d-b8e7-66a53bbc238d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{72992a44-8181-493e-95cb-f1d8b6f5058a}">
 		<relationship name="masterBus">
@@ -53,7 +59,7 @@
 			<destination>{7f8e1327-54c9-4502-9e40-fa08c6359561}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{82b47d44-406a-4bd6-8808-322630d38746}</destination>
+			<destination>{03145441-8ca4-4604-9819-1268fdbfc5f0}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{24e57ac6-8ffa-465b-9b13-3b069763c1f2}" />

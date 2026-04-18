@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{02d2b917-0526-4010-8986-74feeff71e38}">
+		<property name="color">
+			<value>Blue Light 1</value>
+		</property>
 		<property name="name">
 			<value>ResourceCounterIncrement</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{496b288f-a12f-4e45-95d1-c4f0b6de4f9b}</destination>
@@ -31,6 +34,9 @@
 		<relationship name="parameters">
 			<destination>{8a60e323-1d25-47ae-ab99-c3b5b938b18c}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{d67d4887-1332-4d1d-b8e7-66a53bbc238d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{2e051a51-deaa-42f6-8936-48678853ee75}">
 		<relationship name="masterBus">
@@ -53,7 +59,7 @@
 			<destination>{a1babfe6-b991-4544-93dc-3e3ba9c6d107}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{82b47d44-406a-4bd6-8808-322630d38746}</destination>
+			<destination>{03145441-8ca4-4604-9819-1268fdbfc5f0}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{e701a6f0-f77e-4e48-a5c8-1533620809cc}" />
@@ -79,7 +85,11 @@
 			<destination>{2e051a51-deaa-42f6-8936-48678853ee75}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{71b14055-cc63-4f66-82fa-abc97316a87b}" />
+	<object class="MultiSound" id="{71b14055-cc63-4f66-82fa-abc97316a87b}">
+		<relationship name="sounds">
+			<destination>{786392b9-205e-4cbb-8792-2d6d269e41c7}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{b79d8087-a184-4306-b8a6-f7bd4293695d}">
 		<relationship name="effects">
 			<destination>{935f177a-ec76-4b96-babc-ef4345bc59aa}</destination>
@@ -92,6 +102,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{81bb7275-0d8a-4e31-a369-237cdde3d908}" />
+	<object class="SingleSound" id="{786392b9-205e-4cbb-8792-2d6d269e41c7}">
+		<property name="startOffset">
+			<value>3.5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3ad310b8-75f3-43a1-ab7a-736bd5134f43}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{935f177a-ec76-4b96-babc-ef4345bc59aa}" />
 	<object class="MixerBusFader" id="{c1c97c7b-ce29-4366-a371-6ebfad06505b}" />
 </objects>

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{445b694a-9d31-49db-b0d0-19148791b2bf}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>AntSelectionFeedback</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{70d2faa0-ddc4-49fa-9630-5ddec4d65f44}</destination>
@@ -31,6 +34,9 @@
 		<relationship name="parameters">
 			<destination>{5b1fe545-9b90-4e11-b144-1ec50700b497}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{d67d4887-1332-4d1d-b8e7-66a53bbc238d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{388e8003-df4d-435b-9fbe-290878730384}">
 		<relationship name="masterBus">
@@ -53,7 +59,7 @@
 			<destination>{77b55fb0-59d5-4b27-aa59-a53b9ec5d3f1}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{82b47d44-406a-4bd6-8808-322630d38746}</destination>
+			<destination>{03145441-8ca4-4604-9819-1268fdbfc5f0}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{98aed0d1-9391-4f7e-a25b-46760a713582}" />
@@ -79,7 +85,11 @@
 			<destination>{388e8003-df4d-435b-9fbe-290878730384}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{a4033da1-c50b-45ee-8d0b-8dc212706ad8}" />
+	<object class="MultiSound" id="{a4033da1-c50b-45ee-8d0b-8dc212706ad8}">
+		<relationship name="sounds">
+			<destination>{11e3e6eb-98fb-4e68-a3d5-a612093e78f9}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{df62db49-df9b-47b5-834c-65af6bbc4f15}">
 		<relationship name="effects">
 			<destination>{3be4c8b5-bfdf-4063-bc0a-dc995b96dcab}</destination>
@@ -92,6 +102,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1b1ef588-74bc-415d-91f6-20ca217eec16}" />
+	<object class="SingleSound" id="{11e3e6eb-98fb-4e68-a3d5-a612093e78f9}">
+		<relationship name="audioFile">
+			<destination>{f25927b4-5909-4eb1-a15e-f244dea93234}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{3be4c8b5-bfdf-4063-bc0a-dc995b96dcab}" />
 	<object class="MixerBusFader" id="{549e9d5f-a5be-4aee-876f-db2de661c11d}" />
 </objects>

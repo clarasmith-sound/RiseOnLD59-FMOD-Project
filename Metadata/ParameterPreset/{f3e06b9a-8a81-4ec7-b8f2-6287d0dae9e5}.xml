@@ -16,17 +16,25 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>5</value>
+			<value>7</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>MainMenu</value>
-			<value>Idle</value>
-			<value>Layer1</value>
-			<value>Layer2</value>
-			<value>Layer3</value>
+			<value>T1-Layer1</value>
+			<value>T1-Layer2</value>
+			<value>T1-Layer3</value>
+			<value>T2-Layer1</value>
+			<value>T2-Layer2</value>
+			<value>T2-Layer3</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
 		</property>
 		<property name="initialValue">
-			<value>1</value>
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
 		</property>
 	</object>
 </objects>
