@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5bf9c00d-75a5-46e0-b742-a7f9bda16bd1}">
+		<property name="assetPath">
+			<value>Music/TEMP/Industrial Tech Savvy Intensity 2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>85.511708333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ce51294b-a0f9-46ca-9fc3-0dba1ccc24ed}</destination>
+		</relationship>
+	</object>
+</objects>

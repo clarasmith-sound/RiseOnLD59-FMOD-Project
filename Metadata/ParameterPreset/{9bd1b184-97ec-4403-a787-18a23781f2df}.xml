@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{9bd1b184-97ec-4403-a787-18a23781f2df}">
+		<property name="name">
+			<value>AntQty</value>
+		</property>
+		<relationship name="folder">
+			<destination>{2fcace53-2774-440c-9441-1aac9efc7b31}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{73648eeb-bf6a-49e3-a884-8ea55e7712ef}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{73648eeb-bf6a-49e3-a884-8ea55e7712ef}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
