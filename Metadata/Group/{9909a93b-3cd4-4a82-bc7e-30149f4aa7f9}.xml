@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{9909a93b-3cd4-4a82-bc7e-30149f4aa7f9}">
+		<property name="name">
+			<value>Ants</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{faa01d76-452a-43d0-928f-5780743d2ef5}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8b9d92d7-a840-4cbf-bdf9-8011d7d067b4}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{9b6c5c11-e716-47e6-a042-89409e30ded1}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{faa01d76-452a-43d0-928f-5780743d2ef5}">
+		<relationship name="effects">
+			<destination>{ed4e48f8-fb0f-45e3-9271-77d1ded284bd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8b9d92d7-a840-4cbf-bdf9-8011d7d067b4}" />
+	<object class="MixerBusFader" id="{ed4e48f8-fb0f-45e3-9271-77d1ded284bd}" />
+</objects>
