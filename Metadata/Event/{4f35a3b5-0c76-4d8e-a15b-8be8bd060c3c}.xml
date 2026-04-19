@@ -61,11 +61,17 @@
 			<value>true</value>
 		</property>
 		<property name="maxVoices">
-			<value>6</value>
+			<value>3</value>
+		</property>
+		<property name="dopplerEnabled">
+			<value>true</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{4fc6bf6d-19d4-448d-b35b-a92336611c46}" />
 	<object class="GroupTrack" id="{7f12d4a5-1bcb-4970-93ba-702982f60cf2}">
+		<relationship name="automationTracks">
+			<destination>{de7fd164-1712-45cf-993a-b3aeb3204e0e}</destination>
+		</relationship>
 		<relationship name="modules">
 			<destination>{4ecb647b-31be-4fa3-83c4-ce0d083db8b7}</destination>
 		</relationship>
@@ -98,6 +104,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ee191587-fb28-4372-958e-f906c41d07d3}" />
+	<object class="AutomationTrack" id="{de7fd164-1712-45cf-993a-b3aeb3204e0e}">
+		<relationship name="automator">
+			<destination>{3ab260f7-068c-45c4-b683-0c119185c6a3}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{4ecb647b-31be-4fa3-83c4-ce0d083db8b7}">
 		<property name="length">
 			<value>52.399773242630388</value>
@@ -105,11 +116,17 @@
 		<property name="volume">
 			<value>10</value>
 		</property>
+		<relationship name="automators">
+			<destination>{3ab260f7-068c-45c4-b683-0c119185c6a3}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{34812466-e160-4a06-a70f-6618b45d69a5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1f5457d3-fd62-4ed4-a9db-579dd272d98c}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -139,6 +156,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{b43a134d-a4b9-4883-afb9-98bb3b97be54}">
 		<relationship name="effects">
+			<destination>{0c092fdc-06aa-4266-a0f7-317888536e4a}</destination>
 			<destination>{919974cb-e634-41a0-b1a2-53cdf9a2b9ca}</destination>
 			<destination>{6bc5eade-59fa-4d2c-8f6a-de1af358471a}</destination>
 			<destination>{a1a5168b-2526-4df5-b403-e4cec678601d}</destination>
@@ -146,12 +164,26 @@
 	</object>
 	<object class="MixerBusPanner" id="{568ecd28-a719-48cd-a9db-5305c4aff8da}" />
 	<object class="MixerBusFader" id="{16078c84-9f4b-4676-a11f-ef56c10a4409}" />
+	<object class="Automator" id="{3ab260f7-068c-45c4-b683-0c119185c6a3}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>pitch</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{8f8a9f71-e315-4f36-a34d-7ae85dbee245}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{b67d5e40-a803-4369-9947-1f15fb4ed7ee}">
 		<relationship name="effects">
 			<destination>{59046659-0fa4-4252-b17f-4aa978a3d3fc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f4f600e4-5c51-488e-9df7-44d25e38b82d}" />
+	<object class="GainEffect" id="{0c092fdc-06aa-4266-a0f7-317888536e4a}">
+		<relationship name="modulators">
+			<destination>{75890410-e12d-434a-ac98-88d22b60b501}</destination>
+			<destination>{d99921a5-a835-4328-a541-0767589242e3}</destination>
+		</relationship>
+	</object>
 	<object class="MultibandEqEffect" id="{919974cb-e634-41a0-b1a2-53cdf9a2b9ca}">
 		<property name="filterTypeA">
 			<value>10</value>
@@ -179,7 +211,37 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a1a5168b-2526-4df5-b403-e4cec678601d}" />
+	<object class="AutomationCurve" id="{8f8a9f71-e315-4f36-a34d-7ae85dbee245}">
+		<relationship name="parameter">
+			<destination>{a19457b4-0800-44f3-8f66-884cfcb1d5d2}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{2a5edd3a-4f69-4d14-81c8-f99050b1f682}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{59046659-0fa4-4252-b17f-4aa978a3d3fc}" />
+	<object class="ADSRModulator" id="{75890410-e12d-434a-ac98-88d22b60b501}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gain</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>500</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{d99921a5-a835-4328-a541-0767589242e3}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gain</value>
+		</property>
+		<property name="amount">
+			<value>6</value>
+		</property>
+	</object>
 	<object class="LFOModulator" id="{4c7e3bc7-43a8-4e43-b713-69189f956de5}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>frequencyA</value>
@@ -206,6 +268,14 @@
 		</property>
 		<property name="depth">
 			<value>40</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{2a5edd3a-4f69-4d14-81c8-f99050b1f682}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
 		</property>
 	</object>
 </objects>

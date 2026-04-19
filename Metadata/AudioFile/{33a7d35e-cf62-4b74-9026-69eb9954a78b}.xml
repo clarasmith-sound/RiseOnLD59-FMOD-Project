@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{33a7d35e-cf62-4b74-9026-69eb9954a78b}">
+		<property name="assetPath">
+			<value>Ambience/AMBForst-LR_Japan-Ambience, Forest, Light Wind, Birds Chirping, Humming, Wooden Crackle, Cable Car Distance, Airplane, Autumn, Daytime, Kurokawa_FTUS_WOSB.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>176.69034375000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ce51294b-a0f9-46ca-9fc3-0dba1ccc24ed}</destination>
+		</relationship>
+	</object>
+</objects>
