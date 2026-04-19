@@ -19,6 +19,7 @@
 			<destination>{5bdd6dce-ecfe-46d5-8c9f-cfee7a77e1fe}</destination>
 			<destination>{2bb27ff6-b2b1-43dd-88e8-b3e9cea48c07}</destination>
 			<destination>{c893fcb4-d706-4e7b-a7d4-21fe490a72d5}</destination>
+			<destination>{9ac6f457-2794-4e34-8234-e02c6552d0c7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1bb0e033-93ec-43b5-a447-97cef85b7819}" />
@@ -39,6 +40,22 @@
 			<destination>{82bcf9ea-e81f-419d-bb48-681c2e083200}</destination>
 		</relationship>
 	</object>
+	<object class="MultibandEqEffect" id="{9ac6f457-2794-4e34-8234-e02c6552d0c7}">
+		<property name="filterTypeA">
+			<value>0</value>
+		</property>
+		<property name="filterTypeC">
+			<value>9</value>
+		</property>
+		<property name="frequencyC">
+			<value>3000</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{cca6eafa-522b-4dd4-9871-7c7a43201802}</destination>
+			<destination>{e55e108e-8965-4ae7-884a-92df59aaa531}</destination>
+			<destination>{53f7dbec-da65-49c6-bbe4-383ebfa5d752}</destination>
+		</relationship>
+	</object>
 	<object class="Automator" id="{a5e4cdac-c996-4e04-b488-9b011358a6bd}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>wetMix</value>
@@ -53,6 +70,36 @@
 		</property>
 		<relationship name="automationCurves">
 			<destination>{416e72da-9629-4fb8-afb7-828d307c0d6e}</destination>
+		</relationship>
+	</object>
+	<object class="SpectralSidechainModulator" id="{cca6eafa-522b-4dd4-9871-7c7a43201802}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>gainC</value>
+		</property>
+		<property name="amount">
+			<value>24</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{bfba3159-ee30-48ca-adfe-0b6dc3f2e669}</destination>
+		</relationship>
+	</object>
+	<object class="SpectralSidechainModulator" id="{e55e108e-8965-4ae7-884a-92df59aaa531}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="mode">
+			<value>1</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{bfba3159-ee30-48ca-adfe-0b6dc3f2e669}</destination>
+		</relationship>
+	</object>
+	<object class="SpectralSidechainModulator" id="{53f7dbec-da65-49c6-bbe4-383ebfa5d752}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>qualityA</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{bfba3159-ee30-48ca-adfe-0b6dc3f2e669}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{04ae7545-266b-433d-b89f-44d987dad129}">

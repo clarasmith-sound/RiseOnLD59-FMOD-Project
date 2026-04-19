@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EffectPreset" id="{b8100688-f4d1-48d7-b8dc-36f168804e7d}">
+		<property name="name">
+			<value>Effect Chain</value>
+		</property>
+		<relationship name="folder">
+			<destination>{20227e86-1dad-42c9-b1c5-8fdfd7dc32c7}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{45a83be9-a81a-492f-b93f-9fc09888bd41}</destination>
+		</relationship>
+	</object>
+	<object class="EffectChain" id="{45a83be9-a81a-492f-b93f-9fc09888bd41}">
+		<relationship name="effects">
+			<destination>{19580b17-1fb8-4d80-9cd9-849235298968}</destination>
+			<destination>{58581831-a90e-4fcd-8d4b-590fb7bcd4c7}</destination>
+			<destination>{b9b7ee75-76e9-474a-9b24-81f70b8beda1}</destination>
+		</relationship>
+	</object>
+	<object class="PitchShifterEffect" id="{19580b17-1fb8-4d80-9cd9-849235298968}">
+		<property name="wetDryEnabled">
+			<value>true</value>
+		</property>
+		<property name="wetMix">
+			<value>36</value>
+		</property>
+		<property name="fftSize">
+			<value>580</value>
+		</property>
+		<property name="overlap">
+			<value>16.3999996</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{58581831-a90e-4fcd-8d4b-590fb7bcd4c7}">
+		<property name="wetDryEnabled">
+			<value>true</value>
+		</property>
+		<property name="wetMix">
+			<value>90.5</value>
+		</property>
+		<property name="lowGain">
+			<value>-19</value>
+		</property>
+		<property name="midGain">
+			<value>0.5</value>
+		</property>
+		<property name="highGain">
+			<value>-11.5</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{b9b7ee75-76e9-474a-9b24-81f70b8beda1}">
+		<property name="delay">
+			<value>3.4000001</value>
+		</property>
+		<property name="feedback">
+			<value>7</value>
+		</property>
+		<property name="level">
+			<value>-5.5</value>
+		</property>
+		<property name="delayChangeMode">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{5e710a26-9367-42b2-ab86-49c06613793e}</destination>
+		</relationship>
+	</object>
+	<object class="LFOModulator" id="{5e710a26-9367-42b2-ab86-49c06613793e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>delay</value>
+		</property>
+		<property name="rate">
+			<value>8.60000038</value>
+		</property>
+		<property name="depth">
+			<value>13</value>
+		</property>
+	</object>
+</objects>

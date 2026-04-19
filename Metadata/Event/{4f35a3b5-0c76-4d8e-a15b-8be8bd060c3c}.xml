@@ -53,7 +53,7 @@
 			<destination>{ee191587-fb28-4372-958e-f906c41d07d3}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{82b47d44-406a-4bd6-8808-322630d38746}</destination>
+			<destination>{a788986d-b671-402c-8b8e-5cf8161e31bc}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{08d8bf64-7fca-43ef-910e-7f36de06052b}">
@@ -99,11 +99,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{ee191587-fb28-4372-958e-f906c41d07d3}" />
 	<object class="SingleSound" id="{4ecb647b-31be-4fa3-83c4-ce0d083db8b7}">
-		<property name="start">
-			<value>2.625</value>
-		</property>
 		<property name="length">
 			<value>52.399773242630388</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{34812466-e160-4a06-a70f-6618b45d69a5}</destination>
@@ -125,7 +125,7 @@
 	</object>
 	<object class="LoopRegion" id="{1ca7ade5-f553-4fc1-a448-d3bed94e1628}">
 		<property name="position">
-			<value>2.625</value>
+			<value>0</value>
 		</property>
 		<property name="length">
 			<value>52.399773242630388</value>
@@ -167,7 +167,17 @@
 			<destination>{57367fe7-9b04-4ee0-82fc-e48c7db9805f}</destination>
 		</relationship>
 	</object>
-	<object class="ObjectSpatialiserEffect" id="{6bc5eade-59fa-4d2c-8f6a-de1af358471a}" />
+	<object class="ObjectSpatialiserEffect" id="{6bc5eade-59fa-4d2c-8f6a-de1af358471a}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>5.5</value>
+		</property>
+		<property name="minimumExtent">
+			<value>302</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a1a5168b-2526-4df5-b403-e4cec678601d}" />
 	<object class="MixerBusFader" id="{59046659-0fa4-4252-b17f-4aa978a3d3fc}" />
 	<object class="LFOModulator" id="{4c7e3bc7-43a8-4e43-b713-69189f956de5}">

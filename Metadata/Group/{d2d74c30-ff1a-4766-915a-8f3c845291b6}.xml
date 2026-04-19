@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{d2d74c30-ff1a-4766-915a-8f3c845291b6}">
+		<property name="name">
+			<value>HUDNotifies</value>
+		</property>
+		<relationship name="masters">
+			<destination>{ea9db9fb-d823-45a1-8eeb-879a4ac6c1ef}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{0d7ccf0f-ed3b-4740-9972-b01d8f7abb38}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{0b86b881-f8f3-4655-a8e3-e2504eaaf74f}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{9b6c5c11-e716-47e6-a042-89409e30ded1}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{0d7ccf0f-ed3b-4740-9972-b01d8f7abb38}">
+		<relationship name="effects">
+			<destination>{292f581e-409e-4d93-95ff-3c6c5407df74}</destination>
+			<destination>{bfba3159-ee30-48ca-adfe-0b6dc3f2e669}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{0b86b881-f8f3-4655-a8e3-e2504eaaf74f}" />
+	<object class="MixerBusFader" id="{292f581e-409e-4d93-95ff-3c6c5407df74}" />
+	<object class="SpectralSidechain" id="{bfba3159-ee30-48ca-adfe-0b6dc3f2e669}">
+		<property name="minimumFrequency">
+			<value>20</value>
+		</property>
+		<property name="maximumFrequency">
+			<value>22000</value>
+		</property>
+	</object>
+</objects>

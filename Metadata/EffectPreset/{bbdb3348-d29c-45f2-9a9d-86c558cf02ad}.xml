@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EffectPreset" id="{bbdb3348-d29c-45f2-9a9d-86c558cf02ad}">
+		<property name="name">
+			<value>EnemyBugFx</value>
+		</property>
+		<relationship name="folder">
+			<destination>{20227e86-1dad-42c9-b1c5-8fdfd7dc32c7}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{544373da-c239-4f91-8fef-ba538580f929}</destination>
+		</relationship>
+	</object>
+	<object class="EffectChain" id="{544373da-c239-4f91-8fef-ba538580f929}">
+		<relationship name="effects">
+			<destination>{6cdab7cb-6ef1-402d-a0a9-6caae2c6fcc3}</destination>
+			<destination>{58188959-0d09-48a1-bb78-cc1e02b3d3f2}</destination>
+		</relationship>
+	</object>
+	<object class="FlangerEffect" id="{6cdab7cb-6ef1-402d-a0a9-6caae2c6fcc3}">
+		<property name="rate">
+			<value>0.939999998</value>
+		</property>
+		<property name="delay">
+			<value>0.109999999</value>
+		</property>
+		<property name="mix">
+			<value>17</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{3ad63f48-95c2-4729-8ae8-fbc4454daa07}</destination>
+			<destination>{baeb1387-43cd-47e8-b415-0690bb0c7ffa}</destination>
+		</relationship>
+	</object>
+	<object class="TremoloEffect" id="{58188959-0d09-48a1-bb78-cc1e02b3d3f2}">
+		<property name="wetDryEnabled">
+			<value>true</value>
+		</property>
+		<property name="wetMix">
+			<value>69</value>
+		</property>
+		<property name="frequency">
+			<value>9</value>
+		</property>
+		<property name="depth">
+			<value>0.204999998</value>
+		</property>
+		<property name="shape">
+			<value>0.669999957</value>
+		</property>
+		<property name="duty">
+			<value>0.38499999</value>
+		</property>
+		<property name="phase">
+			<value>0.144999996</value>
+		</property>
+		<property name="spread">
+			<value>0.159999996</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{2a7b5e0d-4372-4ac5-ba61-b24a01388532}</destination>
+		</relationship>
+	</object>
+	<object class="LFOModulator" id="{3ad63f48-95c2-4729-8ae8-fbc4454daa07}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>rate</value>
+		</property>
+		<property name="rate">
+			<value>0.319999993</value>
+		</property>
+		<property name="depth">
+			<value>19</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{baeb1387-43cd-47e8-b415-0690bb0c7ffa}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>delay</value>
+		</property>
+		<property name="rate">
+			<value>1.14999998</value>
+		</property>
+		<property name="depth">
+			<value>46.5</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{2a7b5e0d-4372-4ac5-ba61-b24a01388532}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>wetMix</value>
+		</property>
+		<property name="depth">
+			<value>14.5</value>
+		</property>
+	</object>
+</objects>
