@@ -5,13 +5,13 @@
 			<value>Blue</value>
 		</property>
 		<property name="name">
-			<value>Collect</value>
+			<value>Stinky</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{9e5626b6-1f55-4a5c-bf4d-3f47aeefe943}</destination>
+			<destination>{bd3c01e0-309d-44a0-a9b1-7f8d886a636b}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{c75532f0-6f30-4cda-8092-249000700dd4}</destination>

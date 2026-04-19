@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{445b694a-9d31-49db-b0d0-19148791b2bf}">
 		<property name="color">
-			<value>Blue</value>
+			<value>Blue Light 1</value>
 		</property>
 		<property name="name">
 			<value>AntSelectionFeedback</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{70d2faa0-ddc4-49fa-9630-5ddec4d65f44}</destination>
+			<destination>{496b288f-a12f-4e45-95d1-c4f0b6de4f9b}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{388e8003-df4d-435b-9fbe-290878730384}</destination>
