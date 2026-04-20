@@ -4,12 +4,12 @@
 		<property name="color">
 			<value>Magenta</value>
 		</property>
-		<property name="volume">
-			<value>-11</value>
-		</property>
 		<property name="name">
 			<value>Music</value>
 		</property>
+		<relationship name="masters">
+			<destination>{bd0f0944-73c0-4ae1-91b9-bbd4cf3d9fbf}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{5623bab9-32f0-4fc2-bbd0-0a9d2be3ab95}</destination>
 		</relationship>

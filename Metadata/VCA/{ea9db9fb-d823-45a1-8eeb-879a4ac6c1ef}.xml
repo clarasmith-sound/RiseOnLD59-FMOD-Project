@@ -5,7 +5,7 @@
 			<value>Alerts</value>
 		</property>
 		<relationship name="masters">
-			<destination>{a5762b64-86e0-46ba-b9e3-ed202416d5b8}</destination>
+			<destination>{a2992bd0-d857-462c-b742-cfb371cc75d7}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{704e59d1-8612-4c30-941b-a0b921ee6781}</destination>

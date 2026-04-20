@@ -8,7 +8,7 @@
 			<value>Alerts</value>
 		</property>
 		<relationship name="folder">
-			<destination>{496b288f-a12f-4e45-95d1-c4f0b6de4f9b}</destination>
+			<destination>{70d2faa0-ddc4-49fa-9630-5ddec4d65f44}</destination>
 		</relationship>
 	</object>
 </objects>

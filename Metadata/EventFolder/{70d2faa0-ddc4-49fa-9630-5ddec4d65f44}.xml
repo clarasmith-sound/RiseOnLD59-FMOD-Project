@@ -5,7 +5,7 @@
 			<value>Blue</value>
 		</property>
 		<property name="name">
-			<value>Player</value>
+			<value>UI</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b40fe75f-2542-4c60-ae1b-6517228ad6c9}</destination>

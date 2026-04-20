@@ -5,7 +5,7 @@
 			<value>Blue Light 1</value>
 		</property>
 		<property name="name">
-			<value>HUD</value>
+			<value>Misc</value>
 		</property>
 		<relationship name="folder">
 			<destination>{70d2faa0-ddc4-49fa-9630-5ddec4d65f44}</destination>
