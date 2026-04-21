@@ -12,6 +12,9 @@
 		</relationship>
 	</object>
 	<object class="EffectChain" id="{45a83be9-a81a-492f-b93f-9fc09888bd41}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<relationship name="effects">
 			<destination>{19580b17-1fb8-4d80-9cd9-849235298968}</destination>
 			<destination>{58581831-a90e-4fcd-8d4b-590fb7bcd4c7}</destination>

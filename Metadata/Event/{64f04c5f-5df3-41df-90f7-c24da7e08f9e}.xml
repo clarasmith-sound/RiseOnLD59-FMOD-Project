@@ -62,7 +62,11 @@
 			<destination>{d2d74c30-ff1a-4766-915a-8f3c845291b6}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{97635c05-516f-4e64-9f09-12f3705a128a}" />
+	<object class="EventAutomatableProperties" id="{97635c05-516f-4e64-9f09-12f3705a128a}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{37d6c688-ec81-424c-944a-aa3a9dfc7351}" />
 	<object class="GroupTrack" id="{736992b1-80d9-499b-9c3f-d2b5d2b82bb7}">
 		<relationship name="modules">
@@ -126,7 +130,7 @@
 			<value>0.125</value>
 		</property>
 		<property name="length">
-			<value>2.375</value>
+			<value>0.71875</value>
 		</property>
 		<property name="pitch">
 			<value>8</value>
@@ -201,9 +205,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{2ed62715-2b2f-4f8c-b6a5-06c6c87b7679}">
-		<property name="volume">
-			<value>-5</value>
-		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -307,6 +308,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{ef0802b2-a8e4-4583-9b4c-8e05dc0d6edf}">
 		<relationship name="effects">
+			<destination>{75b8ddee-bcbe-4dd9-99e7-2b2b80e913b8}</destination>
 			<destination>{c5929013-2590-47f2-b31c-9e22de6d75ae}</destination>
 		</relationship>
 	</object>
@@ -321,7 +323,7 @@
 	<object class="MixerBusFader" id="{7d2649e1-4fd3-4802-ae84-9c67c852d408}" />
 	<object class="AutomationPoint" id="{0b06dec9-5d51-46ac-827b-8e2a3cbfb9d2}">
 		<property name="position">
-			<value>1.5</value>
+			<value>0.75</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -332,7 +334,7 @@
 	</object>
 	<object class="AutomationPoint" id="{e3f5b9cb-82c8-4d90-84a4-96e5a7cfb4c3}">
 		<property name="position">
-			<value>2.5</value>
+			<value>0.84375</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -340,6 +342,17 @@
 	</object>
 	<object class="MixerBusFader" id="{10dc096c-3e1e-4f0d-8f65-68915516e59c}" />
 	<object class="MixerBusFader" id="{c5d0a13e-30e8-4849-9ff0-a2ab319d48bb}" />
+	<object class="SFXReverbEffect" id="{75b8ddee-bcbe-4dd9-99e7-2b2b80e913b8}">
+		<property name="decayTime">
+			<value>3500</value>
+		</property>
+		<property name="lateDelay">
+			<value>34</value>
+		</property>
+		<property name="wetLevel">
+			<value>-3</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{c5929013-2590-47f2-b31c-9e22de6d75ae}" />
 	<object class="MultibandEqEffect" id="{94d7e4f9-d07f-45aa-b0fb-bc8288ebd4e5}">
 		<property name="filterTypeA">

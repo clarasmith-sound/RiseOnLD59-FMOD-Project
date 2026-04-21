@@ -5,7 +5,7 @@
 			<value>VS_Starvation</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d5c109b8-624d-4dc1-9096-e5fdf25b02c2}</destination>
@@ -62,7 +62,11 @@
 			<destination>{9909a93b-3cd4-4a82-bc7e-30149f4aa7f9}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{3427e7d4-42c2-49eb-a02a-b172bb7a4f5c}" />
+	<object class="EventAutomatableProperties" id="{3427e7d4-42c2-49eb-a02a-b172bb7a4f5c}">
+		<property name="maxVoices">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{9f0f8dde-8483-4e29-8b3f-520290ec92a6}" />
 	<object class="GroupTrack" id="{9c2eccd3-f35a-4228-91f6-5eb778d91fce}">
 		<relationship name="mixerGroup">
@@ -118,7 +122,6 @@
 	<object class="MixerBusEffectChain" id="{7fa5d823-c772-46d6-bbc0-723b0bcba59a}">
 		<relationship name="effects">
 			<destination>{b2c1c4b2-6825-4fcd-b3b0-78ed8f38d607}</destination>
-			<destination>{5a94080e-55fc-4d8b-9ce8-8188c4556a04}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ce58a287-ddaf-4981-8d28-53681b6064bb}" />
@@ -143,7 +146,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{84406bbb-f575-40a4-8fb0-04033cb468ec}" />
 	<object class="MixerBusFader" id="{b2c1c4b2-6825-4fcd-b3b0-78ed8f38d607}" />
-	<object class="SpatialiserEffect" id="{5a94080e-55fc-4d8b-9ce8-8188c4556a04}" />
 	<object class="RandomizerModulator" id="{cd9f936c-f432-4cc7-b11c-dfb9b049fa92}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>

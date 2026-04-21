@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{050d1131-95af-4267-ac18-3a7f31eb23a0}">
 		<property name="assetPath">
-			<value>FromHenry/Music/RousingAntThemePhase4_160_3-4_v1.wav</value>
+			<value>Music/RousingAntThemePhase4_160_3-4_v1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
