@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="SandboxScene" id="{3bae2205-2df3-4b34-9d03-1cf275de72b9}">
+		<property name="name">
+			<value>New Scene</value>
+		</property>
+		<relationship name="folder">
+			<destination>{964289c6-d08d-40a4-a8af-48160cd0b3cf}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{9a23fd28-75fe-42b6-a6f8-51fa170fcfc1}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{c63a7440-1d4e-4ec9-a08f-ae00226d564a}</destination>
+		</relationship>
+	</object>
+	<object class="MarkerTrack" id="{9a23fd28-75fe-42b6-a6f8-51fa170fcfc1}" />
+	<object class="Timeline" id="{c63a7440-1d4e-4ec9-a08f-ae00226d564a}" />
+</objects>

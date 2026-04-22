@@ -4,9 +4,6 @@
 		<property name="assetPath">
 			<value>Ambience/AMBForst-LR_Japan-Ambience, Forest, Light Wind, Birds Chirping, Humming, Wooden Crackle, Cable Car Distance, Airplane, Autumn, Daytime, Kurokawa_FTUS_WOSB.wav</value>
 		</property>
-		<property name="isStreaming">
-			<value>true</value>
-		</property>
 		<property name="frequencyInKHz">
 			<value>192</value>
 		</property>

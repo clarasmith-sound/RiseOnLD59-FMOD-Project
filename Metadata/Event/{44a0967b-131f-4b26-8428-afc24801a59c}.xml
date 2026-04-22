@@ -64,13 +64,10 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{f551cab8-6088-48e1-933e-309feed7280e}">
 		<property name="maxVoices">
-			<value>10</value>
+			<value>4</value>
 		</property>
 		<property name="priority">
 			<value>1</value>
-		</property>
-		<property name="maximumDistance">
-			<value>15</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{f335f8f9-2862-434b-8471-d1c003a424e8}" />
@@ -91,7 +88,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{ef6a4fda-f3c6-4539-ab93-8906b9722bf3}">
 		<property name="volume">
-			<value>-5</value>
+			<value>-3.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{dafafe52-9c67-4d06-ba53-7352b6535ba0}</destination>
@@ -145,7 +142,6 @@
 		<relationship name="sounds">
 			<destination>{ababd616-6eea-493e-9d6f-508ee980016c}</destination>
 			<destination>{cce7259d-2e1c-43a6-bc51-bb63678ebe42}</destination>
-			<destination>{5368e662-3516-430e-a310-d623f811b351}</destination>
 			<destination>{62373cd2-d189-43f4-af8e-1f08579116df}</destination>
 		</relationship>
 	</object>
@@ -157,7 +153,17 @@
 	</object>
 	<object class="MixerBusPanner" id="{7addce65-246a-4b7e-8dc6-4c675febd3bb}" />
 	<object class="MixerBusFader" id="{02593477-5680-443c-8a6b-06e6c26c1d95}" />
-	<object class="SpatialiserEffect" id="{a2db8433-b1b8-48a5-a58a-3469bae995d4}" />
+	<object class="SpatialiserEffect" id="{a2db8433-b1b8-48a5-a58a-3469bae995d4}">
+		<property name="distanceRolloffType">
+			<value>3</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="minimumExtent">
+			<value>22</value>
+		</property>
+	</object>
 	<object class="RandomizerModulator" id="{e0deef63-95b8-4d06-8cd2-0a5a02c3955a}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
@@ -174,11 +180,6 @@
 	<object class="SingleSound" id="{cce7259d-2e1c-43a6-bc51-bb63678ebe42}">
 		<relationship name="audioFile">
 			<destination>{12d62d63-90ee-4285-8a82-cec444306fda}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{5368e662-3516-430e-a310-d623f811b351}">
-		<relationship name="audioFile">
-			<destination>{58e625ef-f3c0-47bb-a584-2e89c90ea2a1}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{62373cd2-d189-43f4-af8e-1f08579116df}">

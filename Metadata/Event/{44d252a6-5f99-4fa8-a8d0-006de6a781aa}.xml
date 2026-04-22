@@ -59,8 +59,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1f0a7c96-d83b-4878-bcba-522c059de34a}">
-		<property name="maximumDistance">
-			<value>15</value>
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+		<property name="maxVoices">
+			<value>4</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{e86c980b-e1e5-435c-9efe-ab8e7cd308dd}" />
@@ -99,6 +102,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{4d0c0f74-57ca-404c-b7ec-efd7c019285a}">
+		<property name="volume">
+			<value>3</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{11f87aa7-0a3e-490d-ab5a-68a54a937365}</destination>
 		</relationship>
@@ -232,7 +238,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{11f87aa7-0a3e-490d-ab5a-68a54a937365}">
 		<relationship name="effects">
-			<destination>{42b209e3-0941-4b2c-be01-ce06c5907777}</destination>
+			<destination>{dd02b17e-6258-4cbd-af4e-c1ef04d3eaec}</destination>
 			<destination>{f775c9d7-6aed-44d1-9ae1-3ec143925642}</destination>
 			<destination>{06f19056-de2f-4447-a707-d1a67c3c7d73}</destination>
 		</relationship>
@@ -337,18 +343,23 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{9167cf7d-2629-4917-9670-793a3f5e7d00}">
 		<relationship name="effects">
+			<destination>{6d1ab023-a41f-4b3e-abd3-ee9c0e086b98}</destination>
+			<destination>{bb2107b6-f07c-4ebc-82bd-a36c8ac9ff41}</destination>
 			<destination>{d26d3149-4170-4ddc-b4ef-585cca0b93fa}</destination>
 			<destination>{6742162e-fde4-4060-b4e3-59d98491320c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{85143d75-f86d-49d1-9881-addc83507870}" />
-	<object class="ProxyEffect" id="{42b209e3-0941-4b2c-be01-ce06c5907777}">
-		<property name="inputFormat">
-			<value>1</value>
+	<object class="ThreeEQEffect" id="{dd02b17e-6258-4cbd-af4e-c1ef04d3eaec}">
+		<property name="lowGain">
+			<value>-6</value>
 		</property>
-		<relationship name="preset">
-			<destination>{bbdb3348-d29c-45f2-9a9d-86c558cf02ad}</destination>
-		</relationship>
+		<property name="highGain">
+			<value>0.5</value>
+		</property>
+		<property name="lowCrossover">
+			<value>340</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{f775c9d7-6aed-44d1-9ae1-3ec143925642}" />
 	<object class="SpatialiserEffect" id="{06f19056-de2f-4447-a707-d1a67c3c7d73}">
@@ -359,10 +370,10 @@
 			<value>1</value>
 		</property>
 		<property name="soundSize">
-			<value>10</value>
+			<value>0.25</value>
 		</property>
 		<property name="minimumExtent">
-			<value>360</value>
+			<value>18</value>
 		</property>
 	</object>
 	<object class="ThreeEQEffect" id="{3f8d7e30-d2c9-4477-a45d-5422dbacd28c}">
@@ -377,6 +388,16 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{c3da269c-ff64-4c45-ae22-ffbee226d423}" />
+	<object class="DistortionEffect" id="{6d1ab023-a41f-4b3e-abd3-ee9c0e086b98}">
+		<property name="level">
+			<value>0.550000012</value>
+		</property>
+	</object>
+	<object class="FlangerEffect" id="{bb2107b6-f07c-4ebc-82bd-a36c8ac9ff41}">
+		<property name="mix">
+			<value>30</value>
+		</property>
+	</object>
 	<object class="TremoloEffect" id="{d26d3149-4170-4ddc-b4ef-585cca0b93fa}">
 		<property name="frequency">
 			<value>0.0460000038</value>

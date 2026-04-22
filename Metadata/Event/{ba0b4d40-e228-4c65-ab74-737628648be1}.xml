@@ -63,7 +63,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{2b7e6f7e-f0f8-4f4e-b8b3-a05ccbd12c64}">
 		<property name="maxVoices">
-			<value>1</value>
+			<value>6</value>
 		</property>
 		<property name="maximumDistance">
 			<value>35</value>
@@ -130,7 +130,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{f6ab1d22-69c3-4058-a208-dabe22d05bbd}">
 		<property name="volume">
-			<value>-18</value>
+			<value>-10</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{51075814-a835-4422-9b57-6c3240a1ff78}</destination>
@@ -335,8 +335,6 @@
 	<object class="MixerBusFader" id="{2bb97ab1-9aa7-4c7a-b1a4-5f2bd7d23fd0}" />
 	<object class="MixerBusEffectChain" id="{97979282-1277-4e96-a221-cefd0fd565db}">
 		<relationship name="effects">
-			<destination>{0ee13a4c-70b0-42b2-a852-84a6869ff6eb}</destination>
-			<destination>{da1256f1-20f8-4d32-9b69-71fd820ba005}</destination>
 			<destination>{94df40a2-d725-49ef-893e-748d4cad937c}</destination>
 		</relationship>
 	</object>
@@ -397,21 +395,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{7abc317b-afc9-4fe2-85de-cc3a22fd7598}" />
 	<object class="MixerBusFader" id="{99cf3f74-e9b4-47a1-814e-39ee37302cce}" />
-	<object class="SpatialiserEffect" id="{b1532ff8-3eeb-41b7-9ab1-693e7517ee1e}" />
-	<object class="DelayEffect" id="{0ee13a4c-70b0-42b2-a852-84a6869ff6eb}">
-		<property name="delay">
-			<value>94</value>
+	<object class="SpatialiserEffect" id="{b1532ff8-3eeb-41b7-9ab1-693e7517ee1e}">
+		<property name="extentMode">
+			<value>1</value>
 		</property>
-		<property name="level">
-			<value>-17.5</value>
+		<property name="soundSize">
+			<value>0.600000024</value>
 		</property>
-	</object>
-	<object class="SFXReverbEffect" id="{da1256f1-20f8-4d32-9b69-71fd820ba005}">
-		<property name="decayTime">
-			<value>2900</value>
-		</property>
-		<property name="wetLevel">
-			<value>-13.5</value>
+		<property name="minimumExtent">
+			<value>50</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{94df40a2-d725-49ef-893e-748d4cad937c}" />
